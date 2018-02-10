@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky theader</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+        <script src="../sticky-theader.js"></script>
+    </head>
+
+    <style>
+        * {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        em {
+           font-size: 1.5em; 
+        }
+
+        /*
+            custom styling example
+        */
+        .custom-sticky { 
+            position: fixed; 
+            top: 0; 
+            z-index: 100; 
+            display: none;
+            background-color: deeppink!important;
+            color: white;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Sticky theader</h1> 
+                <em>Simple to use vanillaJS library to make table headers sticky on scroll.</em> 
+            </div>
+            <table class="table table-sticky"> <thead class="table-info"> <tr> <th scope="col">#</th> <th scope="col">One</th> <th scope="col">Two</th> </tr></thead> <tbody> <tr> <td>1</td><td>John</td><td>Doe</td></tr><tr> <td>2</td><td>John</td><td>Doe</td></tr><tr> <td>3</td><td>John</td><td>Doe</td></tr><tr> <td>4</td><td>John</td><td>Doe</td></tr><tr> <td>5</td><td>John</td><td>Doe</td></tr><tr> <td>6</td><td>John</td><td>Doe</td></tr><tr> <td>7</td><td>John</td><td>Doe</td></tr><tr> <td>8</td><td>John</td><td>Doe</td></tr><tr> <td>9</td><td>John</td><td>Doe</td></tr><tr> <td>10</td><td>John</td><td>Doe</td></tr><tr> <td>11</td><td>John</td><td>Doe</td></tr><tr> <td>12</td><td>John</td><td>Doe</td></tr><tr> <td>13</td><td>John</td><td>Doe</td></tr><tr> <td>14</td><td>John</td><td>Doe</td></tr><tr> <td>15</td><td>John</td><td>Doe</td></tr></tbody> </table>
+            <div class="jumbotron">
+                <em>Works with multiple tables:</em>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-sticky"> <thead class="table-info"> <tr> <th scope="col">#</th> <th scope="col">One</th> <th scope="col">Two</th> </tr></thead> <tbody> <tr> <td>1</td><td>John</td><td>Doe</td></tr><tr> <td>2</td><td>John</td><td>Doe</td></tr><tr> <td>3</td><td>John</td><td>Doe</td></tr><tr> <td>4</td><td>John</td><td>Doe</td></tr><tr> <td>5</td><td>John</td><td>Doe</td></tr><tr> <td>6</td><td>John</td><td>Doe</td></tr><tr> <td>7</td><td>John</td><td>Doe</td></tr><tr> <td>8</td><td>John</td><td>Doe</td></tr><tr> <td>9</td><td>John</td><td>Doe</td></tr><tr> <td>10</td><td>John</td><td>Doe</td></tr><tr> <td>11</td><td>John</td><td>Doe</td></tr><tr> <td>12</td><td>John</td><td>Doe</td></tr><tr> <td>13</td><td>John</td><td>Doe</td></tr><tr> <td>14</td><td>John</td><td>Doe</td></tr><tr> <td>15</td><td>John</td><td>Doe</td></tr></tbody> </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <em style="margin: 1em 0">You can add custom styling to your sticky headers, like the one below. You can also disable scroll-top button</em>
+                    </div>
+                    <table class="table table-custom-sticky"> <thead class="table-info"> <tr> <th scope="col">#</th> <th scope="col">One</th> <th scope="col">Two</th> </tr></thead> <tbody> <tr> <td>1</td><td>John</td><td>Doe</td></tr><tr> <td>2</td><td>John</td><td>Doe</td></tr><tr> <td>3</td><td>John</td><td>Doe</td></tr><tr> <td>4</td><td>John</td><td>Doe</td></tr><tr> <td>5</td><td>John</td><td>Doe</td></tr><tr> <td>6</td><td>John</td><td>Doe</td></tr><tr> <td>7</td><td>John</td><td>Doe</td></tr><tr> <td>8</td><td>John</td><td>Doe</td></tr><tr> <td>9</td><td>John</td><td>Doe</td></tr><tr> <td>10</td><td>John</td><td>Doe</td></tr><tr> <td>11</td><td>John</td><td>Doe</td></tr><tr> <td>12</td><td>John</td><td>Doe</td></tr><tr> <td>13</td><td>John</td><td>Doe</td></tr><tr> <td>14</td><td>John</td><td>Doe</td></tr><tr> <td>15</td><td>John</td><td>Doe</td></tr><tr> <td>16</td><td>John</td><td>Doe</td></tr><tr> <td>17</td><td>John</td><td>Doe</td></tr><tr> <td>18</td><td>John</td><td>Doe</td></tr><tr> <td>19</td><td>John</td><td>Doe</td></tr><tr> <td>20</td><td>John</td><td>Doe</td></tr><tr> <td>21</td><td>John</td><td>Doe</td></tr><tr> <td>22</td><td>John</td><td>Doe</td></tr><tr> <td>23</td><td>John</td><td>Doe</td></tr><tr> <td>24</td><td>John</td><td>Doe</td></tr><tr> <td>25</td><td>John</td><td>Doe</td></tr><tr> <td>26</td><td>John</td><td>Doe</td></tr><tr> <td>27</td><td>John</td><td>Doe</td></tr><tr> <td>28</td><td>John</td><td>Doe</td></tr><tr> <td>29</td><td>John</td><td>Doe</td></tr><tr> <td>30</td><td>John</td><td>Doe</td></tr></tbody> </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        $(function() {
+            // init sticky headers on tables with 'table-sticky' class; default css class will be added
+            injectStickyTheaders({
+                targetClass: 'table-sticky',
+                appendScrollTop: true
+            }); 
+            
+            // you can provide your custom css class
+            injectStickyTheaders({
+                targetClass: 'table-custom-sticky',
+                cssClass: 'custom-sticky',
+                appendScrollTop: false // or simply do not provide it
+            });
+        });
+    </script>
+</html>
